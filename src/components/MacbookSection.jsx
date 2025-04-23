@@ -3,7 +3,7 @@ import { MacbookScroll } from "../components/ui/macbook-scroll";
 
 export function MacbookSection() {
   return (
-    <div className="-translate-y-32 overflow-hidden bg-background w-full">
+    <div className=" overflow-hidden bg-background w-full">
       <MacbookScroll
         title={
           <span className="text-primary">

@@ -54,24 +54,24 @@ function FeatureSection() {
   ];
 
   return (
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-foreground sm:text-4xl text-2xl font-bold text-center mb-16">
+    <div className="max-w-6xl mx-auto">
+      <h2 className="text-foreground sm:text-4xl text-2xl font-bold text-center mb-16">
         Why<span className="text-primary"> Telegram </span>?
       </h2>
-      <div class="grid lg:grid-cols-3 md:grid-cols-2 max-md:max-w-lg mx-auto gap-12">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 max-md:max-w-lg mx-auto gap-12">
         {features.map((item, index) => (
           <div
-            class="p-4 flex gap-6 rounded-lg hover:shadow-md hover:scale-105 transition-all duration-300 cursor-pointer"
+            className="p-4 flex gap-6 rounded-lg hover:shadow-md hover:scale-105 transition-all duration-300 cursor-pointer"
             key={index}
           >
-            <div class="w-16 h-16 bg-secondary p-3 rounded-full shrink-0">
-              <img src={item.icon} alt={item.name} class="w-full h-full" />
+            <div className="w-16 h-16 bg-secondary p-3 rounded-full shrink-0">
+              <img src={item.icon} alt={item.name} className="w-full h-full" />
             </div>
             <div>
-              <h3 class="text-foreground text-lg font-semibold mb-3">
+              <h3 className="text-foreground text-lg font-semibold mb-3">
                 {item.name}
               </h3>
-              <p class="text-slate-400 font-medium text-sm leading-relaxed">
+              <p className="text-slate-400 font-medium text-sm leading-relaxed">
                 {item.description}
               </p>
             </div>

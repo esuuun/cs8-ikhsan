@@ -12,7 +12,7 @@ function Navbar() {
     <motion.div
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, type: "spring", stiffness: 100 }}
+      transition={{ duration: 1, type: "spring", stiffness: 100, delay: 1.5 }}
       className="sticky top-0 z-50 p-5"
     >
       <header className="bg-secondary/30 backdrop-blur-sm rounded-3xl">
