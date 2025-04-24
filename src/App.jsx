@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import telegram_animation from "./assets/telegram_animation.json";
 import Lottie from "lottie-react";
 import { motion } from "motion/react";
+import AvatarSection from "./components/AvatarSection";
 
 function App() {
   const [isAnimationComplete, setIsAnimationComplete] = useState(false);
@@ -42,12 +43,14 @@ function App() {
           opacity: 1,
         }}
         transition={{ duration: 1, ease: "easeInOut", delay: 1.3 }}
+        className="flex flex-col gap-10"
       >
         <Navbar />
         <HeroSection />
         <MacbookSection />
         <FeatureSection />
         <MarqueeSection />
+        <AvatarSection />
         <Footer />
       </motion.div>
     </div>
