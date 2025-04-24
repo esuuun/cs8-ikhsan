@@ -26,7 +26,11 @@ function App() {
         }}
         onAnimationComplete={handleAnimationComplete}
         transition={{ duration: 1, ease: "easeInOut", delay: 1 }}
-        className="fixed top-0 left-0 w-full h-full flex justify-center items-center z-50"
+        className={
+          isAnimationComplete
+            ? "hidden"
+            : "fixed top-0 left-0 w-full h-full flex justify-center items-center z-50"
+        }
       >
         <Lottie
           className={isAnimationComplete ? "hidden" : ""}
