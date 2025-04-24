@@ -57,7 +57,7 @@ export const MacbookScroll = ({ src, showGradient, title, badge }) => {
   return (
     <div
       ref={ref}
-      className="flex min-h-[200vh] shrink-0 scale-[0.35] transform flex-col items-center justify-start py-0 [perspective:800px] sm:scale-50 md:scale-100 md:py-80"
+      className="flex min-h-[200vh] shrink-0 scale-[0.50] transform flex-col items-center justify-start py-0 [perspective:800px] sm:scale-50 md:scale-100 md:py-80"
     >
       <motion.h2
         style={{
@@ -120,11 +120,7 @@ export const Lid = ({ scaleX, scaleY, rotate, translate, src }) => {
             boxShadow: "0px 2px 0px 2px #171717 inset",
           }}
           className="absolute inset-0 flex items-center justify-center rounded-lg bg-[#010101]"
-        >
-          <span className="text-white">
-            <AceternityLogo />
-          </span>
-        </div>
+        ></div>
       </div>
       <motion.div
         style={{
